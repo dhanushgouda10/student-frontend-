@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+}
+
+/* ─── Container ─── */
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 24px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #1a1a2e;
+  border-bottom: 3px solid #4f46e5;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: #1a1a2e;
+}
+
+/* ─── Form Card ─── */
+.form-card {
+  background: white;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #4f46e5;
+}
+
+.form-card.editing {
+  border-left: 5px solid #f59e0b;
+  background: #fffbeb;
+}
+
+.form-title {
+  margin-bottom: 16px;
+  font-size: 17px;
+  color: #374151;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+input {
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  flex: 1 1 150px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #4f46e5;
+}
+
+/* ─── Buttons ─── */
+.form-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn-primary {
+  background: #4f46e5;
+  color: white;
+}
+
+.btn-cancel {
+  background: #6b7280;
+  color: white;
+}
+
+.btn-edit {
+  background: #f59e0b;
+  color: white;
+  margin-right: 6px;
+}
+
+.btn-delete {
+  background: #ef4444;
+  color: white;
+}
+
+/* ─── Message Box ─── */
+.message {
+  padding: 12px 18px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.message.success {
+  background: #d1fae5;
+  color: #065f46;
+  border: 1px solid #6ee7b7;
+}
+
+.message.error {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+
+/* ─── Loading ─── */
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 16px;
+  color: #6b7280;
+}
+
+/* ─── Table ─── */
+.table-wrapper {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead tr {
+  background: #4f46e5;
+  color: white;
+}
+
+th {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+td {
+  padding: 12px 16px;
+  font-size: 14px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.row-even {
+  background: #ffffff;
+}
+
+.row-odd {
+  background: #f9fafb;
+}
+
+tbody tr:hover {
+  background: #ede9fe;
+  transition: background 0.15s;
+}
+
+/* ─── No Students ─── */
+.no-students {
+  text-align: center;
+  padding: 40px;
+  color: #6b7280;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 640px) {
+  .container {
+    margin: 16px;
+    padding: 16px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .form-actions {
+    width: 100%;
+  }
+
+  .btn {
+    flex: 1;
+  }
+}
