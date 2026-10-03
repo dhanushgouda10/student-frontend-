@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import StudentList from "./StudentList";
 
-const API_URL = "http://localhost:8080/student";
+const API_URL = "https://studentmanagement-api-dhanush1012-cehratexdqctcgge.centralindia-01.azurewebsites.net/student";
 
 function App() {
   const [students, setStudents] = useState([]);
